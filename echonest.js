@@ -3,16 +3,32 @@
 	var echonest_url_head = "http://developer.echonest.com/api/v4/";
 	var echonest_api_key = "5KZM0TWV9BY8TUUGR";
 
-	$(document).ready( function() {
-		
+	$(document).ready( function() 
+	{
 			$("#echonest-button").click(search_clicked);
+			$("#itunes-button").click(itunes_clicked);
 		
 	});
-
-	function search_clicked() {
 	
-		var echonest_url_head = "http://developer.echonest.com/api/v4/"
-		
+	/***
+	
+	iTunes Tests
+	
+	***/
+	
+	function itunes_clicked()
+	{
+		console.log("itunes clicked");
+	}
+	
+	
+
+	/***
+		Echo Nest tests
+	***/
+	
+	function search_clicked() 
+	{	
 		get_song_info("karma%20police", "radiohead");
 	
 	}
