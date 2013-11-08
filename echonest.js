@@ -2,6 +2,8 @@
 
 	var echonest_url_head = "http://developer.echonest.com/api/v4/";
 	var echonest_api_key = "5KZM0TWV9BY8TUUGR";
+	
+	var itunes_url_head = "https://itunes.apple.com/";
 
 	$(document).ready( function() 
 	{
@@ -18,7 +20,15 @@
 	
 	function itunes_clicked()
 	{
-		console.log("itunes clicked");
+		var url = itunes_url_head + "search?term=karma%20police&attribute=songTerm&entity=album";
+		$.ajax({
+			url: url,
+			dataType:'JSONP',
+			})
+			.done(function(data) {
+				console.log(data);
+			});
+				
 	}
 	
 	
