@@ -5,7 +5,7 @@
 
 	$(document).ready( function() {
 		
-			$("#search-button").click(search_clicked);
+			$("#echonest-button").click(search_clicked);
 		
 	});
 
